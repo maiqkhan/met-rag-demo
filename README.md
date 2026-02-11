@@ -41,3 +41,8 @@ A simple demo of a RAG application
 - **Transparency**: Retrieved sources can be cited and verified
 - **Domain Specialization**: Works with specialized knowledge not in the LLM's training data
 - **Cost-Effective**: No need to fine-tune large models on custom data
+
+### Chunking
+
+
+![Chunking Methods](images/Chunking%20Image.png)
