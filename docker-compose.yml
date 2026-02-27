@@ -19,3 +19,12 @@ services:
       - DATA_PATH=/app/data/met_museum_objects_full.json 
     volumes:
       - ./data:/app/data 
+  ollama:
+    image: ollama/ollama
+    container_name: ollama 
+    ports:
+      - "11434:11434"
+    volumes:
+      - "./ollama_data:/root/.ollama"
+    restart: unless-stopped 
+    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 5 && ollama pull tinyllama && wait"]
