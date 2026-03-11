@@ -102,11 +102,11 @@ def rag(query):
     #return answer["response"]
     return answer.choices[0].message.content.strip()
 
-question = "Which gallery room is Jerusalem from the Mount of Olives by Charles-Théodore Frère located in the MET Museum in New York? Could you provide a link to the gallery location as well?"
+# question = "Which gallery room is Jerusalem from the Mount of Olives by Charles-Théodore Frère located in the MET Museum in New York? Could you provide a link to the gallery location as well?"
 
-answer  = rag(question)
+# answer  = rag(question)
 
-print(answer)
+# print(answer)
 
 # app = FastAPI()
 
